@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
 
-import { mainReducer } from './reducers/mainReducer';
+import { correctAnswersReducer } from './reducers/correctAnswersReducer';
+import { incorrectAnswersReducer } from './reducers/incorrectAnswersReducer';
 
 const reducer = combineReducers({
-  mainStore: mainReducer,
+  correctStore: correctAnswersReducer,
+  incorrectStore: incorrectAnswersReducer,
 });
 
 export const store = configureStore({ reducer });
