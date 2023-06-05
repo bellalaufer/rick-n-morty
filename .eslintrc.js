@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "node": true,
     },
     "extends": [
         "eslint:recommended",
@@ -16,6 +17,10 @@ module.exports = {
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+        'import/prefer-default-export': 'off',
+        'default-param-last': 'off',
+        'consistent-return': 'off',
+        'react/prop-types': 'off',
+        'import/no-extraneous-dependencies': 'off',
     }
 }
